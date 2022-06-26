@@ -1,0 +1,68 @@
+{
+    "name": "navalabswebsite",
+    "description": "The official website for NavaLabs.",
+    "main": "pages/_app.tsx",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "dotenv -e .env.local next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "+https://github.com/r1zyn/NavaLabsWebsite"
+    },
+    "keywords": [
+        "Website",
+        "Next.js",
+        "React",
+        "NavaLabs"
+    ],
+    "author": {
+        "name": "r1zyn",
+        "email": "ascendus.dev@gmail.com",
+        "url": "https://github.com/r1zyn"
+    },
+    "bugs": {
+        "url": "https://github.com/r1zyn/NavaLabsWebsite/issues",
+        "email": "ascendus.dev@gmail.com"
+    },
+    "license": "ISC",
+    "prettier": {
+        "arrowParens": "always",
+        "bracketSameLine": false,
+        "bracketSpacing": true,
+        "singleQuote": false,
+        "tabWidth": 4,
+        "trailingComma": "none",
+        "semi": true
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.1.18",
+        "@types/aos": "^3.0.4",
+        "@types/nprogress": "^0.2.0",
+        "aos": "^2.3.4",
+        "autoprefixer": "^10.4.7",
+        "next": "12.1.6",
+        "nprogress": "^0.2.0",
+        "postcss": "^8.4.14",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "sass": "^1.53.0",
+        "tailwindcss": "^3.1.4"
+    },
+    "devDependencies": {
+        "@types/node": "18.0.0",
+        "@types/react": "18.0.14",
+        "@types/react-dom": "18.0.5",
+        "dotenv": "^16.0.1",
+        "dotenv-cli": "^5.1.0",
+        "eslint": "8.18.0",
+        "eslint-config-next": "12.1.6",
+        "typescript": "4.7.4"
+    }
+}

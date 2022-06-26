@@ -1,0 +1,21 @@
+# Configuration folders
+.vscode
+.github
+
+# Dependencies
+node_modules
+yarn.lock
+
+# Assets 
+public
+
+# Configuration files
+.editorconfig
+.gitignore
+.prettierignore
+
+# Typings
+next-env.d.ts
+
+# Other
+README.md

@@ -1,0 +1,10 @@
+{
+"regions": ["all"],
+"public": false,
+"cleanUrls": true,
+"trailingSlash": true,
+"github": {
+    "enabled": true,
+    "autoJobCancelation": true
+}
+}
