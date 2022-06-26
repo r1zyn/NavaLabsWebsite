@@ -1,11 +1,20 @@
 import type { NextComponent } from "../lib/types";
 
-export type HeaderProps = {
+/**
+ * Interface for header component options.
+ * @interface HeaderProps
+ */
+export interface HeaderProps {
     title: string;
     description: string;
     buttons?: JSX.Element[];
 }
 
+/**
+ * Header component for building page headers.
+ * @param {HeaderProps} props The props for the header component
+ * @returns {JSX.Element}
+ */
 export const Header: NextComponent<HeaderProps> = ({ title, description, buttons }: HeaderProps): JSX.Element => {
     return <main className="box-border flex-grow w-full block">
         <section className="py-[7.5em] relative text-center px-[3vw] text-[#fff]" style={{

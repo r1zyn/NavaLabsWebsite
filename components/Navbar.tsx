@@ -3,6 +3,10 @@ import Link from "next/link";
 import type { NextComponent } from "../lib/types";
 import { NextRouter, useRouter } from "next/router";
 
+/**
+ * Navigation component for site navigation.
+ * @returns {JSX.Element}
+ */
 export const Navbar: NextComponent = (): JSX.Element => {
     const [pageTop, setPageTop]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(true) as [boolean, Dispatch<SetStateAction<boolean>>];
     const router: NextRouter = useRouter();
