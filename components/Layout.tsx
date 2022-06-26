@@ -25,8 +25,8 @@ export const Layout: NextComponentWithChildren<LayoutOptions> = (props: LayoutOp
             
             <div id="root" className="font-sans">
                 <Navbar />
-                
-                <main>
+
+                <main className="z-20">
                     {props.children}
                 </main>
             </div>

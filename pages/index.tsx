@@ -59,6 +59,8 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                 </div>
             </div>
         </section>
+
+        <section className="h-screen w-max"></section>
     </Container>;
 };
 

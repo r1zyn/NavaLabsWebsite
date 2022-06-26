@@ -21,7 +21,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
         };
     }, []);
 
-    return <header id="masthead" className="bg-white py-[1.125em] px-[3vw]">
+    return <header id="masthead" className={`${!pageTop ? "fixed shadow-2xl" : ""} bg-white py-[1.125em] px-[3vw] transition duration-700 ease-in-out z-[1] w-full`}>
         <div className="mx-auto max-w-[1200px]">
             <div className="flex items-center">
                 <div style={{
@@ -33,7 +33,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                         </Link>
                     </p>
                 </div>
-                <nav id="main-navigation" className={pageTop ? "ml-auto" : "ml-auto fixed bg-[#fff] hover:"} aria-label="Main Navigation">
+                <nav id="main-navigation" className="ml-auto" aria-label="Main Navigation">
                     <div>
                         <button id="menu-close" className="menu-toggle hidden">
                             <span className="screen-reader-text">Open Menu</span>
