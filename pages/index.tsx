@@ -18,7 +18,7 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                 </Link>
             </div>
         ]} />
-        <section id="features" className="relative -mt-[7.5em] px-[3vw] overflow-hidden">
+        <section id="features" className="relative -mt-[8em] px-[3vw] overflow-hidden">
             <div className="mx-auto max-w-[1200px]">
                 <div className="block">
                     <div className="flex flex-wrap -mx-[0.9375em]" data-aos="fade-up" data-aos-duration="3000">
