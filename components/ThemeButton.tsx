@@ -1,5 +1,6 @@
 import type { NextComponentWithStyles } from "../lib/types";
 import { useEffect, useState } from "react";
+import { eventDispatcher } from "../events/ThemeUtil";
 
 /**
  * Button for toggling between light and dark mode.
@@ -10,7 +11,6 @@ export const ThemeButton: NextComponentWithStyles = ({ className, style }): JSX.
     const [theme, toggleTheme] = useState("light");
 
     useEffect((): void => {
-
         if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
             toggleTheme("dark");
         } else {
@@ -25,6 +25,10 @@ export const ThemeButton: NextComponentWithStyles = ({ className, style }): JSX.
 
             themeToggleDarkIcon.classList.add("hidden");
             themeToggleLightIcon.classList.add("hidden");
+
+            eventDispatcher("themeUpdate", {
+                theme: theme === "light" ? "dark" : "light"
+            });
 
             if (localStorage.getItem("color-theme")) {
                 if (theme === "light") {

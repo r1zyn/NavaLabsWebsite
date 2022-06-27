@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Link from "next/link";
 import type { NextComponent } from "../lib/types";
 import { NextRouter, useRouter } from "next/router";
+import { ThemeButton } from "./ThemeButton";
 
 /**
  * Navigation component for site navigation.
@@ -21,7 +22,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
         };
     }, []);
 
-    return <header id="masthead" className={`${!pageTop ? "fixed shadow-2xl" : ""} bg-white py-[1.125em] px-[3vw] transition duration-700 ease-in-out z-[1] w-full`}>
+    return <header id="masthead" className={`${!pageTop ? "fixed shadow-2xl" : "absolute"} bg-white dark:bg-[#1A1A1A] py-[1.125em] px-[3vw] transition duration-700 ease-in-out z-[1] w-full`}>
         <div className="mx-auto max-w-[1200px]">
             <div className="flex items-center">
                 <div style={{
@@ -29,7 +30,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                 }}>
                     <p className="m-0">
                         <Link href="/" passHref>
-                            <a className="max-h-[36px] h-auto max-w-full border-none align-middle font-bold text-2xl text-gray-800">NavaLabs</a>
+                            <a className="max-h-[36px] h-auto max-w-full border-none align-middle font-bold text-2xl text-gray-800 dark:text-white">NavaLabs</a>
                         </Link>
                     </p>
                 </div>
@@ -39,7 +40,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                             <span className="screen-reader-text">Open Menu</span>
                             <span className="icon-close" aria-hidden="true"></span>
                         </button>
-                        <ul className="hidden lg:flex items-center list-none m-0 p-0">
+                        <ul className="hidden lg:flex items-center list-none m-0 p-0 dark:text-white">
                             <li className={`${router.pathname === "/" ? "text-[#00c6ff]" : ""} inline-block mt-0 mb-0 mr-0 ml-[1.25em] pb-[0.1875em] pt-[0.1875em] relative hover:text-[#00c6ff]`}>
                                 <Link href="/" passHref>
                                     <a>Home</a>
@@ -73,6 +74,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                         </ul>
                     </div>
                 </nav>
+                <ThemeButton />
                 <button id="menu-open" className="menu-toggle hidden">
                     <span className="screen-reader-text">Close Menu</span>
                     <span className="icon-menu" aria-hidden="true"></span>

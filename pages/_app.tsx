@@ -4,9 +4,10 @@ import { NextRouter, useRouter } from "next/router";
 import { NProgress, configure, done, start } from "nprogress";
 import { Layout } from "../components/Layout";
 import { ScrollButton } from "../components/ScrollButton";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 import AOS from "aos";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import metadata from "../lib/static/meta.json";
 
 import "../styles/globals.scss";
@@ -16,12 +17,16 @@ import "aos/dist/aos.css";
 
 function App({ Component, pageProps: { session, ...pageProps } }: AppProps<NextPageProps>) {
     const router: NextRouter = useRouter();
+    const [theme, toggleTheme] = useState("light");
+    const extendedThemeToggle = () => toggleTheme(theme === "light" ? "dark" : "light");
 
     useEffect((): (() => void) => {
         if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
             document.documentElement.classList.add("dark");
+            toggleTheme("dark");
         } else {
             document.documentElement.classList.remove("dark");
+            toggleTheme("light");
         }
 
         AOS.init();
@@ -45,16 +50,19 @@ function App({ Component, pageProps: { session, ...pageProps } }: AppProps<NextP
     }, [router.events]);
 
     // @ts-ignore
-    return Component.defaultProps && Component.defaultProps.name && typeof metadata[Component.defaultProps?.name.toLowerCase()] !== "undefined" ? <>
+    return Component.defaultProps && Component.defaultProps.name && typeof metadata[Component.defaultProps?.name.toLowerCase()] !== "undefined" ? <ThemeContext.Provider value={theme}>
         {/* @ts-ignore */}
         <Layout name={Component.defaultProps?.name} meta={metadata[Component.defaultProps?.name.toLowerCase()]}>
             <Component {...pageProps} />
             <ScrollButton />
         </Layout>
-    </> : <>
+    </ThemeContext.Provider> : <ThemeContext.Provider value={{
+        theme: theme as "light" | "dark",
+        toggleTheme: extendedThemeToggle
+    }}>
         <Component {...pageProps} />
         <ScrollButton />
-    </>;
+    </ThemeContext.Provider>;
 }
 
 export default App;

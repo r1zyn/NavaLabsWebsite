@@ -18,13 +18,13 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                 </Link>
             </div>
         ]} />
-        <section id="features" className="relative -mt-[5em] px-[3vw] overflow-hidden">
+        <section id="features" className="relative -mt-[7.5em] px-[3vw] overflow-hidden">
             <div className="mx-auto max-w-[1200px]">
                 <div className="block">
                     <div className="flex flex-wrap -mx-[0.9375em]" data-aos="fade-up" data-aos-duration="3000">
                         <div className="mb-[4vw] flex flex-col max-w-[33.333%] box-border px-[0.9375em] relative w-full cursor-pointer hover:-translate-y-1 transition-all duration-[1s] ease-in-out" style={{ flex: "0 0 33.333%" }}>
-                            <div className="bg-[#fff] rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ border: "1px solid #dde0e7", boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
-                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800" style={{ margin: "1em 0 0.5em" }}>Contributions</h3>
+                            <div className="bg-[#fff] border-[#dde0e7] border-[1px] dark:bg-[#1a1a1a] dark:border-[#1a1a1a] dark:text-white rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
+                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800 dark:text-white" style={{ margin: "1em 0 0.5em" }}>Contributions</h3>
                                 <div className="px-[1.5em] mb-[1.25em]">
                                     <p style={{ margin: "0 0 1em" }}>Over 595 updates across all services provided in 2018-2022</p>
                                 </div>
@@ -34,8 +34,8 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                             </div>
                         </div>
                         <div className="mb-[4vw] flex flex-col max-w-[33.333%] box-border px-[0.9375em] relative w-full cursor-pointer hover:-translate-y-1 transition-all duration-[1s] ease-in-out" style={{ flex: "0 0 33.333%" }}>
-                            <div className="bg-[#fff] rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ border: "1px solid #dde0e7", boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
-                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800" style={{ margin: "1em 0 0.5em" }}>Services</h3>
+                        <div className="bg-[#fff] border-[#dde0e7] border-[1px] dark:bg-[#1a1a1a] dark:border-[#1a1a1a] dark:text-white rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
+                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800 dark:text-white" style={{ margin: "1em 0 0.5em" }}>Services</h3>
                                 <div className="px-[1.5em] mb-[1.25em]">
                                     <p style={{ margin: "0 0 1em" }}>5+ projects, one team. All with over 10,000 users average, servicing over 32 countries</p>
                                 </div>
@@ -45,8 +45,8 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                             </div>
                         </div>
                         <div className="mb-[4vw] flex flex-col max-w-[33.333%] box-border px-[0.9375em] relative w-full cursor-pointer hover:-translate-y-1 transition-all duration-[1s] ease-in-out" style={{ flex: "0 0 33.333%" }}>
-                            <div className="bg-[#fff] rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ border: "1px solid #dde0e7", boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
-                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800" style={{ margin: "1em 0 0.5em" }}>Value</h3>
+                        <div className="bg-[#fff] border-[#dde0e7] border-[1px] dark:bg-[#1a1a1a] dark:border-[#1a1a1a] dark:text-white rounded-[3px] box-border flex-grow-[1] pb-[0.75em]" style={{ boxShadow: "0px 1px 2px 0px rgb(0 0 0 / 8%);" }}>
+                                <h3 className="mt-[1.25em] text-[1.5em] px-[1em] relative after:bg-[#00c6ff] after:block after:content-[''] after:h-full after:-left-[1px] after:absolute after:top-0 after:w-[5px] font-semibold text-slate-800 dark:text-white" style={{ margin: "1em 0 0.5em" }}>Value</h3>
                                 <div className="px-[1.5em] mb-[1.25em]">
                                     <p style={{ margin: "0 0 1em" }}>Worth over $90,000</p>
                                 </div>
