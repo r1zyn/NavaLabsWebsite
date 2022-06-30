@@ -14,7 +14,7 @@ export const defaults: Defaults = {
     url: process.env.NODE_ENV === "production" ? "https://navalabs.net/" : "http://localhost:3000",
     description: "No description was provided for this page.",
     keywords: ["NavaLabs"],
-    image: "/vercel.svg",
+    image: "/assets/50VVikXdXROYy9qncvNg3umWNy4ityiC.png",
     icon: "/assets/jlarzqa2wGR9X9sZvZWkVEJopxqUv5iW.png",
     "theme-color": "#ffffff"
 };
