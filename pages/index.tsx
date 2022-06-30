@@ -11,7 +11,7 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
     return <Container>
         <Header title="Welcome to NavaLabs." description="A versatile, growing, successful team of individuals working daily to achieve excellence." buttons={[
             <div key={1} className="mt-[1.875em] justify-center items-center flex flex-wrap mb-[0.9375em] hover:-translate-y-1 transition-all duration-[1s] ease-in-out">
-                <Link href="/discord" passHref>
+                <Link href="/invite/discord" passHref>
                     <a className="bg-[#fff] text-[#00c6ff] text-[1em] font-bold rounded-[1.75em] py-[0.9em] px-[2.14285em] hover:opacity-[.9] transition-all duration-[.3s] ease" style={{
                         margin: "0 0.375em 0"
                     }}>Work with us</a>
@@ -76,7 +76,7 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
                         </div>
                         <div className="justify-center md:justify-start mt-[1.875em] items-center flex flex-wrap mb-[0.9375em]">
                             <a href="#" className="ml-0 mr-[0.75em] font-bold items-center bg-[#00c6ff] border-0 rounded-[1.75em] shadow-none text-[#fff] cursor-pointer inline-flex text-[0.875em] justify-center leading-[1.2] opacity-[1] align-middle hover:brightness-[1.1] transition-all duration-[0.5s] ease-in-out" style={{ margin: "0 0.375em 0.75em", padding: "0.9em 2.14285em" }}>Learn More</a>
-                            <Link href="/discord" passHref>
+                            <Link href="/invite/discord" passHref>
                                 <a className="ml-0 mr-[0.75em] font-bold bg-none text-[#00c6ff] border-0 rounded-[1.75em] shadow-none cursor-pointer inline-flex text-[0.875em] justify-center leading-[1.2] opacity-[1] align-middle transition-all duration-[0.5s] ease-in-out" style={{ margin: "0 0.375em 0.75em", padding: "0.9em 2.14285em", boxShadow: "inset 0 0 0 2px currentColor" }} onMouseEnter={(e): void => {
                                     e.currentTarget.style.boxShadow = "inset 0 0 0 3px currentColor";
                                 }}
@@ -93,14 +93,14 @@ const Home: NextPage<NextPageProps> = ({ name }): JSX.Element => {
 
         <section id="cta" className="py-[3.75em] bg-[#f8f8fa] dark:bg-[#1a1a1a] px-[3vw] w-full">
             <div className="mx-auto max-w-[1200px]">
-                <div className="px-[7%] rounded-[5px] mb-[1.875em] text-[#fff] relative" style={{ padding: "3.75em 3vw 1.875em", background: "linear-gradient(to right, #0072ff, #00c6ff)" }} data-aos="zoom-in" data-aos-duration="2000">
-                    <div className="items-center justify-center flex flex-wrap -mx-[0.9375em] px-[0.9375em] relative w-full">
-                        <div className="max-w-[66.666%] text-left mb-[1.5em] box-border" style={{ flex: "0 0 66.666%" }}>
-                            <h2 className="text-[1.875em] text-inherit mt-0 m-0 font-bold tracking-tight">Are you interested?</h2>
-                            <p className="text-[1.125em] color-inherit mt-[0.5em] leading-[1.5] mb-0" style={{ margin: "0 0 1em" }}>Come work with us today!</p>
+                <div className="px-[7%] rounded-[5px] mb-[1.875em] text-[#fff] relative py-[1.2em] md:pt-[3.75em] md:pr-[3vw] md:pb-[1.875em]" style={{ background: "linear-gradient(to right, #0072ff, #00c6ff)" }} data-aos="zoom-in" data-aos-duration="2000">
+                    <div className="items-center justify-center flex flex-wrap md:-mx-[0.9375em] px-[0.9375em] relative w-full">
+                        <div className="w-full md:max-w-[66.666%] text-center md:text-left md:mb-[1.5em] box-border">
+                            <h2 className="text-[1.8em] md:text-[1.875em] text-inherit mt-0 m-0 font-bold tracking-tight">Are you interested?</h2>
+                            <p className="text-[1em] md:text-[1.125em] color-inherit mt-[0.5em] leading-[1.5] mb-0" style={{ margin: "0 0 1em" }}>Come work with us today!</p>
                         </div>
-                        <div className="mt-0 max-w-[33.333%] justify-end items-center flex flex-wrap mb-[0.9375em] w-full" style={{ flex: "0 0 33.333%" }}>
-                            <Link href="/discord" passHref>
+                        <div className="mt-0 md:max-w-[33.333%] justify-center md:justify-end items-center flex flex-wrap md:mb-[0.9375em] w-full">
+                            <Link href="/invite/discord" passHref>
                                 <a className="bg-[#fff] text-[#00c6ff] font-bold items-center border-0 rounded-[1.75em] shadow-none box-border cursor-pointer inline-flex text-[0.875em] justify-center leading-[1.2] opacity-[1] transition-all duration-[.3s] ease align-middle hover:brightness-[0.95]" style={{ margin: "0 0.375em 0.75em", padding: "0.9em 2.14285em" }}>Contact Us</a>
                             </Link>
                         </div>

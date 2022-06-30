@@ -67,7 +67,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                                 </Link>
                             </li>
                             <li className="inline-block mt-0 mb-0 mr-0 ml-[1.25em] pb-[0.1875em] pt-[0.1875em] relative">
-                                <Link href="/discord" passHref>
+                                <Link href="/invite/discord" passHref>
                                     <a className="px-[1.25em] py-[0.75em] items-center text-white bg-[#00c6ff] border-0 rounded-[1.75em] cursor-pointer inline-flex justify-center leading-[1.2] opacity-100 transition duration-[0.3s] ease align-middle hover:opacity-[.8]">Discord</a>
                                 </Link>
                             </li>

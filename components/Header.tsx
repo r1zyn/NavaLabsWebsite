@@ -20,11 +20,14 @@ export interface HeaderProps {
 export const Header: NextComponent<HeaderProps> = ({ title, description, buttons }: HeaderProps): JSX.Element => {
     const [isDark, setDark] = useState(false);
     useEffect((): void => {
+        if (document.querySelector("html")?.classList.contains("dark")) setDark(true);
+        else setDark(false);
+
         // @ts-ignore
         document.addEventListener("themeUpdate", (event: CustomEvent): void => {
             setDark(event.detail.theme === "dark");
         });
-    });
+    }, [setDark]);
 
     return <ThemeContext.Consumer>
         {(ctx: { theme: "light" | "dark"; }): JSX.Element => <main className="box-border flex-grow w-full block">
