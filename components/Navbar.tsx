@@ -56,8 +56,8 @@ export const Navbar: NextComponent = (): JSX.Element => {
                                     <a>Jobs</a>
                                 </Link>
                             </li>
-                            <li className={`${router.pathname === "/faw" ? "text-[#00c6ff]" : ""} inline-block mt-0 mb-0 mr-0 ml-[1.25em] pb-[0.1875em] pt-[0.1875em] relative hover:text-[#00c6ff]`}>
-                                <Link href="/faw" passHref>
+                            <li className={`${router.pathname === "/faq" ? "text-[#00c6ff]" : ""} inline-block mt-0 mb-0 mr-0 ml-[1.25em] pb-[0.1875em] pt-[0.1875em] relative hover:text-[#00c6ff]`}>
+                                <Link href="/faq" passHref>
                                     <a>FAQ</a>
                                 </Link>
                             </li>
