@@ -20,3 +20,6 @@ To run the website on [Vercel](https://vercel.com), ensure you have created an a
 * `events` - Custom DOM event files
 * `contexts` - React context files
 * `components` - Component files
+
+### Configuration
+Environment variables are currently not needed. Changes can be made in `.config.js` or `.json` files. Meta data constants can be edited in `lib/constants.ts`. Static meta data can be edited in `lib/static/meta.json`.
