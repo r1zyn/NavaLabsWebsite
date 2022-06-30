@@ -1,3 +1,4 @@
+import { Footer } from "./Footer";
 import { Fragment, ReactNode } from "react";
 import { Meta, MetaOptions } from "./Meta";
 import { Navbar } from "./Navbar";
@@ -29,6 +30,8 @@ export const Layout: NextComponentWithChildren<LayoutOptions> = (props: LayoutOp
                 <main className="z-20">
                     {props.children}
                 </main>
+
+                <Footer />
             </div>
         </Fragment>
     );

@@ -54,8 +54,8 @@ function App({ Component, pageProps: { session, ...pageProps } }: AppProps<NextP
         {/* @ts-ignore */}
         <Layout name={Component.defaultProps?.name} meta={metadata[Component.defaultProps?.name.toLowerCase()]}>
             <Component {...pageProps} />
-            <ScrollButton />
         </Layout>
+        <ScrollButton />
     </ThemeContext.Provider> : <ThemeContext.Provider value={{
         theme: theme as "light" | "dark",
         toggleTheme: extendedThemeToggle

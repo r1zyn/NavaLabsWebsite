@@ -6,7 +6,7 @@ import type { NextComponentWithChildren } from "../lib/types";
  * @returns {JSX.Element}
  */
 export const Container: NextComponentWithChildren = ({ children }): JSX.Element => {
-    return <div className="w-screen flex flex-col justify-center items-center">
+    return <div className="w-screen flex flex-col justify-center items-center bg-[#fff] dark:bg-[#1a1a1a]">
         {children}
     </div>;
 };

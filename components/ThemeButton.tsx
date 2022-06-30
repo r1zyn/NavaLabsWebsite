@@ -18,7 +18,7 @@ export const ThemeButton: NextComponentWithStyles = ({ className, style }): JSX.
         }
     }, [toggleTheme]);
 
-    return <button id="theme-toggle" type="button" className={`${className ? className : ""} text-gray-900 dark:text-white focus:outline-none rounded-lg text-sm p-2.5`}
+    return <button id="theme-toggle" type="button" className={`${className ? className : ""} text-[#1a1a1a] dark:text-white focus:outline-none rounded-lg text-sm ml-5`}
         onClick={(): void => {
             const themeToggleDarkIcon: HTMLElement = document.getElementById("theme-toggle-dark-icon") as HTMLElement;
             const themeToggleLightIcon: HTMLElement = document.getElementById("theme-toggle-light-icon") as HTMLElement;

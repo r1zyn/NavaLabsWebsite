@@ -37,7 +37,7 @@ export const Header: NextComponent<HeaderProps> = ({ title, description, buttons
                 }} />
                 <div className="relative mx-auto block text-center" data-aos="fade-up" data-aos-duration="3000">
                     <div className="mb-[0.75em]">
-                        <h1 className="text-[3em] m-0">{title}</h1>
+                        <h1 className="text-[2.5em] md:text-[2.95em] lg:text-[3em] m-0 font-bold tracking-tight">{title}</h1>
                     </div>
                     <div className="text-[1.25em] leading-[1.5]">
                         <p style={{

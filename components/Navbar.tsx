@@ -28,7 +28,7 @@ export const Navbar: NextComponent = (): JSX.Element => {
                 <div style={{
                     flex: "0 1 auto"
                 }}>
-                    <p className="m-0">
+                    <p className="ml-5 md:m-0">
                         <Link href="/" passHref>
                             <a className="max-h-[36px] h-auto max-w-full border-none align-middle font-bold text-2xl text-gray-800 dark:text-white">NavaLabs</a>
                         </Link>
